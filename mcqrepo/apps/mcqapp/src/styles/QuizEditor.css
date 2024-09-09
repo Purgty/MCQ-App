@@ -1,0 +1,97 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text color */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  padding-top: 150px;
+}
+button {
+  background-color: #6200ea; /* Primary button color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  border-radius: 25px; /* Rounded corners */
+}
+
+button:hover {
+  background-color: #3700b3; /* Darker button color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:disabled {
+  background-color: #555; /* Disabled button color */
+  cursor: not-allowed; /* Change cursor for disabled button */
+}
+
+h2, h3 {
+  color: #e0e0e0; /* Slightly lighter text for headings */
+}
+
+input[type="text"] {
+  background-color: #1e1e1e; /* Dark input background */
+  color: #ffffff; /* Light text color */
+  border: 1px solid #333; /* Dark border */
+  padding: 10px;
+  margin: 10px 0;
+  width: calc(100% - 22px); /* Full width minus padding */
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+input[type="text"]:hover {
+  background-color: #333; /* Lighter background on hover */
+  border-color: #555; /* Lighter border on hover */
+}
+
+button {
+  background-color: #6200ea; /* Primary button color */
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #3700b3; /* Darker button color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+button:disabled {
+  background-color: #555; /* Disabled button color */
+  cursor: not-allowed; /* Change cursor for disabled button */
+}
+
+input[type="text"]:focus {
+  outline: none; /* Remove default outline */
+  border-color: #6200ea; /* Highlight border on focus */
+  background-color: #333; /* Maintain hover background on focus */
+}
+
+h2, h3 {
+  transition: opacity 0.5s; /* Fade effect for headings */
+}
+
+h2:hover, h3:hover {
+  opacity: 0.8; /* Slightly fade on hover */
+}
+.editor-container {
+  width: auto;
+  display: flex;
+  margin: 0 auto; /* Center horizontally */
+  height: auto;
+  justify: center;
+  flex-direction: column;
+  padding: 10px; /* Add some padding */
+}
